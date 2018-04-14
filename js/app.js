@@ -103,8 +103,10 @@ class Player {
           rewardCollusionBox.showModal();
           levelTable.level += 1;
           if (levelTable.level > bestSoFarTable.level) {
-            bestSoFarTable.level = levelTable.level
-            localStorage.setItem("highScore", bestSoFarTable.level)
+            if(levelTable.level < 100) {
+              bestSoFarTable.level = levelTable.level
+              localStorage.setItem("highScore", bestSoFarTable.level);
+            }
           }
           player.x = player.initialX;
           player.y = player.initialY;
@@ -115,6 +117,9 @@ class Player {
   update() {
     this.checkCollisionWithEnemies();
     this.checkCollisionWithRewards();
+    if (levelTable.level == 100) {
+      gameCompleteBox.showModal();
+    }
   }
 
   // Draws the player on the screen
@@ -225,6 +230,7 @@ class Table {
 const enemyCollusionBox = document.querySelector(".collusion-with-enemy");
 const rewardCollusionBox = document.querySelector(".collusion-with-reward");
 const selectCharBox = document.querySelector(".select-char");
+const gameCompleteBox = document.querySelector(".game-complete");
 
 // CHARACTER SELECTION BUTTONS
 const charImages = document.querySelectorAll(".char-img");

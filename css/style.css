@@ -23,6 +23,11 @@ dialog {
   color: #0E6D1B;
 }
 
+.game-complete {
+  top: 280px;
+  color: #000000;
+}
+
 .char-img {
   margin: 3px;
 }
