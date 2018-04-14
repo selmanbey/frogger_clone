@@ -4,10 +4,10 @@ browser-based frogger clone.
 *this game is a udacity nanodegree project*
 
 # gameplay
-select your character and try to collect as many gems as possible
-avoid getting eaten by giant bugs
-each collected gem ups your level a point
-getting eaten by a bug resets your level
+select your character and try to collect as many gems as possible <br>
+avoid getting eaten by giant bugs <br>
+each collected gem ups your level a point <br>
+getting eaten by a bug resets your level <br>
 
 # code dependencies
 
