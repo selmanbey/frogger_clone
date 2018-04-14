@@ -8,6 +8,7 @@ select your character and try to collect as many gems as possible <br>
 avoid getting eaten by giant bugs <br>
 each collected gem ups your level a point <br>
 getting eaten by a bug resets your level <br>
+if you reach level 100 the game ends (enough is enough) <br>
 
 # code dependencies
 
