@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+}
+
+dialog {
+  position: absolute;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.select-char {
+  top: 110px;
+  width: 300px;
+  height: 400px;
+}
+
+.collusion-with-enemy {
+  top: 280px;
+  color: #830D2F;
+}
+
+.collusion-with-reward {
+  top: 280px;
+  color: #0E6D1B;
+}
+
+.char-img {
+  margin: 3px;
+}
+
+.char-img:hover {
+  border: 2px #D4307D dashed;
+}
